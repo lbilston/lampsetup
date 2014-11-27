@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Script by Luke Bilston
-# Free to steal, modify and claim as your own
+# Free to steal, modify and claim as your own!
 
 # update should be done as root
 if [[ $EUID -ne 0 ]]; then
