@@ -29,5 +29,6 @@ apt-get dist-upgrade -y
 apt-get install -y ssh
 apt-get install -y apache2 php5 libapache2-mod-php5 
 apt-get install -y mysql-server mysql-client php5-mysql
+apt-get install -y unzip
 apt-get install -y phpmyadmin
 apt-get install -y webmin
