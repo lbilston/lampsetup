@@ -13,12 +13,12 @@ fi
 export http_proxy=http://10.130.48.19:8080
 
 # Required repository for webmin
-echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
-echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
+# echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
+# echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
 
 # Keys for Webmin
 cd ~
-wget http://www.webmin.com/jcameron-key.asc
+wget -q http://www.webmin.com/jcameron-key.asc jcameron-key.asc
 apt-key add jcameron-key.asc
 
 # Update to latest Version
@@ -32,3 +32,4 @@ apt-get install -y mysql-server mysql-client php5-mysql
 apt-get install -y unzip
 apt-get install -y phpmyadmin
 apt-get install -y webmin
+apt-get install -y python python-setuptools python-virtualenv python-dev gcc swig dialog libaugeas0 libssl-dev
