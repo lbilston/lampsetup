@@ -14,7 +14,7 @@ export http_proxy=http://10.130.48.19:8080
 
 # Required repository for webmin
 echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
-echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib /etc/apt/sources.list
+echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
 
 # Keys for Webmin
 cd ~
