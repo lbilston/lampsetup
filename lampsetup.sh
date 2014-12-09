@@ -1,7 +1,9 @@
 #!/bin/bash
 
-# Script by Luke Bilston
+# Script by Luke Bilston 
 # Free to steal, modify and claim as your own!
+
+# Last Update 9 DEC 14 
 
 # update should be done as root
 if [[ $EUID -ne 0 ]]; then
