@@ -11,8 +11,6 @@ if [[ $EUID -ne 0 ]]; then
    exit 1
 fi
 
-# Proxy Support
-export http_proxy=http://10.130.48.19:8080
 
 # Required repository for webmin
 # echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
@@ -33,5 +31,3 @@ apt-get install -y apache2 php5 libapache2-mod-php5
 apt-get install -y mysql-server mysql-client php5-mysql
 apt-get install -y unzip
 apt-get install -y phpmyadmin
-apt-get install -y webmin
-apt-get install -y python python-setuptools python-virtualenv python-dev gcc swig dialog libaugeas0 libssl-dev
