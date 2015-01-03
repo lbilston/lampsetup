@@ -13,8 +13,8 @@ fi
 
 
 # Required repository for webmin
-# echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
-# echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
+echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
+echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
 
 # Keys for Webmin
 cd ~
@@ -30,4 +30,7 @@ apt-get install -y ssh
 apt-get install -y apache2 php5 libapache2-mod-php5 
 apt-get install -y mysql-server mysql-client php5-mysql
 apt-get install -y unzip
+apt-get install -y webmin
 apt-get install -y phpmyadmin
+
+
