@@ -13,13 +13,19 @@ fi
 
 
 # Required repository for webmin
-echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
-echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
 
-# Keys for Webmin
-cd ~
-wget -q http://www.webmin.com/jcameron-key.asc jcameron-key.asc
-apt-key add jcameron-key.asc
+if grep -Fxq "# Webmin Install" /etc/apt/sources.list
+then
+   echo "Webmin Already Installed"
+else
+   echo # Webmin Install >> /etc/apt/sources.list
+   echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
+   echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
+   cd ~
+   wget -q http://www.webmin.com/jcameron-key.asc jcameron-key.asc
+   apt-key add jcameron-key.asc
+fi
+
 
 # Update to latest Version
 apt-get update -y
