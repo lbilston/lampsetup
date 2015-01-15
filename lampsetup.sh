@@ -38,7 +38,7 @@ apt-get install -y ntp ntpdate
 apt-get install -y apache2 apache2-doc apache2-utils libapache2-mod-php5 
 apt-get install -y php5 php5-common php5-gd php5-mysql php5-imap phpmyadmin php5-cli php5-cgi 
 apt-get instasl -y libapache2-mod-fcgid apache2-suexec php-pear php-auth php5-mcrypt mcrypt 
-apt-get install -y php5-imagick imagemagick libapache2-mod-suphp libruby libapache2-mod-python php5-curl 
+apt-get install -y php5-imagick imagemagick libruby libapache2-mod-python php5-curl 
 apt-get install -y php5-intl php5-memcache php5-memcached php5-ming php5-ps php5-pspell php5-recode php5-snmp 
 apt-get install -y php5-sqlite php5-tidy php5-xmlrpc php5-xsl memcached snmp php5-ldap php5-gmp php-pear
 apt-get install -y mysql-server mysql-client php5-mysql
@@ -46,7 +46,7 @@ apt-get install -y unzip
 apt-get install -y webmin
 
 a2enmod suexec rewrite 
-# php5enmod mcrypt
+php5enmod mcrypt
 
 reboot
 
