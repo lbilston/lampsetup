@@ -42,8 +42,7 @@ apt-get install -y webmin
 apt-get install -y phpmyadmin
 apt-get install -y php5-ldap php5-gmp php-pear
 
-a2enmod suexec rewrite ssl actions include cgi
-a2enmod dav_fs dav auth_digest
+a2enmod suexec rewrite 
 php5enmod mcrypt
 
 reboot
