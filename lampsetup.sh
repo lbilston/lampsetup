@@ -18,7 +18,7 @@ if grep -Fxq "# Webmin Install" /etc/apt/sources.list
 then
    echo "Webmin Already Installed"
 else
-   echo # Webmin Install >> /etc/apt/sources.list
+   echo "# Webmin Install" >> /etc/apt/sources.list
    echo deb http://download.webmin.com/download/repository sarge contrib >> /etc/apt/sources.list
    echo deb http://webmin.mirror.somersettechsolutions.co.uk/repository sarge contrib >> /etc/apt/sources.list
    cd ~
